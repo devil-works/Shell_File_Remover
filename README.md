@@ -12,9 +12,13 @@ So I tried to remove using command line-
 
 # Usage
 
-
+1.Customize remove.sh
+<br>
+<br>
 
 ```Shell
+rermove.sh
+
 count=0
 while [ $count -lt 10 ]; do
     ls -f . | head -n 10 | perl -lne unlink
@@ -23,3 +27,23 @@ while [ $count -lt 10 ]; do
 done
 
 ```
+
+- while [ $count -lt int ]; do
+  <br>
+  (How many times repeat the process)
+  <br>
+  <br>
+- ls -f . | head -n 10 | perl -lne unlink
+  <br>
+  How many files remove at once
+  <br>
+  <br>
+- sleep int
+  <br>
+  (interval int sec.)
+  <br>
+  <br>
+
+  2.Place remove.sh in the target derectory
+  <br>
+  <br>
