@@ -47,4 +47,6 @@ done
   2.Place remove.sh in the target derectory
   <br>
   <br>
-![directory (2)](https://user-images.githubusercontent.com/58777805/121776853-0e60f680-cbca-11eb-8796-0e74e7456a3f.png)
+  ![remover](https://user-images.githubusercontent.com/58777805/121777469-39007e80-cbcd-11eb-89ee-844648d7bb48.png)
+
+  2.Execute remove.sh on commmand line
