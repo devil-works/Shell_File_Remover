@@ -49,4 +49,4 @@ done
   <br>
   ![remover](https://user-images.githubusercontent.com/58777805/121777469-39007e80-cbcd-11eb-89ee-844648d7bb48.png)
 
-  2.Execute remove.sh on commmand line
+  3.Execute remove.sh on commmand line
