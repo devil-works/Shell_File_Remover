@@ -47,3 +47,4 @@ done
   2.Place remove.sh in the target derectory
   <br>
   <br>
+![directory (2)](https://user-images.githubusercontent.com/58777805/121776853-0e60f680-cbca-11eb-8796-0e74e7456a3f.png)
