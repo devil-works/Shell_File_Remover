@@ -20,10 +20,10 @@ So I tried to remove using command line-
 rermove.sh
 
 count=0
-while [ $count -lt 10 ]; do
-    ls -f . | head -n 10 | perl -lne unlink
+while [ $count -lt 1000 ]; do
+    ls -f . | head -n 1000 | perl -lne unlink
     count=`expr ${count} + 1`
-    sleep 2
+    sleep 1
 done
 
 ```
@@ -33,7 +33,7 @@ done
   (How many times repeat the process)
   <br>
   <br>
-- ls -f . | head -n 10 | perl -lne unlink
+- ls -f . | head -n int | perl -lne unlink
   <br>
   How many files remove at once
   <br>
@@ -51,4 +51,46 @@ done
 <br>
 ![remover](https://user-images.githubusercontent.com/58777805/121777469-39007e80-cbcd-11eb-89ee-844648d7bb48.png)
 
-3.Execute remove.sh on commmand line
+\*FTP client hardly works for huge directory.In my case,the size of the target directory was 50GB.I needed to upload remove.sh to the target directory with command line.
+
+You have to run locally. So I used Git Bash.
+
+<br>
+*This time remove.sh is prepared in the root directory of the C drive.
+
+```Bash
+$ cd /c/
+$ scp remove.sh [Server Name]@[Server IP]:/PATH/TO/TARGET_DIR
+PASSWORD REQUIRED ********(Input your password)
+```
+
+<br>
+<br>
+<br>
+
+3.Run remove.sh on commmand line
+
+Move to the target directory and run it.
+
+```Shell
+$ cd target_directory
+$ sh remove.sh
+```
+
+<br>
+
+# Additional usage
+
+```Shell
+#!/bin/sh
+
+count=0
+while [ $count -lt 1000 ]; do
+    echo $count;
+    ls -f . | head -n 1000 | perl -lne unlink
+    count=`expr ${count} + 1`
+    sleep 1
+done
+```
+
+Added the counter "echo $count;" to visualize the number of executions.
