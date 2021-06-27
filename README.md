@@ -1,7 +1,7 @@
 # File Remover
 
 When I was in charge of management Web Infra in my company at the first time, it was terrible.
-There are directory has hundreds of millions of image files.
+There are directory has hundreds of millions of image files.(40GB)
 
 Then I had to remove all of the them, but the FTP client didn't work for it because the FTP client tries to find the all file names before removing. I couldn't even open the directory.
 
@@ -79,7 +79,7 @@ $ sh remove.sh
 
 <br>
 
-# Additional usage
+### Version 1.0.0
 
 ```Shell
 #!/bin/sh
